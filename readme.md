@@ -37,7 +37,7 @@ Our pretrained weight can be downloaded from [huggingface](https://huggingface.c
 For example, to download the fp16 model for inference:
 ```bash
 mkdir pretrained && cd pretrained
-wget wget https://huggingface.co/rgxie/LDM/resolve/main/LDM6v01.ckpt
+wget wget https://huggingface.co/rgxie/LDM/resolve/main/LDM_6V_SDF.ckpt
 cd ..
 ```
 
@@ -53,11 +53,11 @@ python app.py
 # image to 3d
 # --workspace: folder to save output (*.obj,*.jpg)
 # --test_path: path to a folder containing images, or a single image
-python infer.py tiny_trf_trans_sdf --resume pretrained/LDM6v01.ckpt --workspace workspace_test --test_path example --seed 0
+python infer.py tiny_trf_trans_sdf --resume pretrained/LDM_6V_SDF.ckpt --workspace workspace_test --test_path example --seed 0
 
 # text to 3d
 # --workspace: folder to save output (*.obj,*.jpg)
-python infer.py tiny_trf_trans_sdf --resume pretrained/last6view060804_24.ckpt --workspace workspace_test --txt_or_image True --mvdream_or_zero123 True --text_prompt 'a hamburge' --seed 0
+python infer.py tiny_trf_trans_sdf --resume pretrained/LDM_6V_SDF.ckpt --workspace workspace_test --txt_or_image True --mvdream_or_zero123 True --text_prompt 'a hamburge' --seed 0
 
 ```
 For more options, please check [options](./core/options.py). If you find the output unsatisfying, try using different multi-view diffusion models or seeds!
