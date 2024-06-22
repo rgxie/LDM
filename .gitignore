@@ -2,4 +2,4 @@ __pycache__
 pretrained
 .vscode
 *.log
-example
+train_data

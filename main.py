@@ -42,7 +42,7 @@ def main():
         print(f"Error occurred while copying file: {e}")
 
 
-    ddp_kwargs = DistributedDataParallelKwargs(find_unused_parameters=True)
+    ddp_kwargs = DistributedDataParallelKwargs(find_unused_parameters=False)
     seed = 6868
     set_seed(seed)
 

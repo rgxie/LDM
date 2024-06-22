@@ -69,7 +69,7 @@ Training dataset: our training dataset is based on [GObjaverse](https://aigc3d.g
 Specifically, we used a ~80K filtered subset list from [LGM](https://github.com/3DTopia/LGM). The data list can be found [here](https://github.com/ashawkey/objaverse_filter/blob/main/gobj_merged.json). Furthermore, configure the [options](./core/options.py) with the following:
 
 - data_path: The directory where your downloaded dataset is stored.
-- data_debug_list: The path to the data list file.
+- data_list_path: The path to the data list file.
 - The structure of dataset:
 ```
 |-- data_path

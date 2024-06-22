@@ -1,5 +1,3 @@
-torch==2.0.0 
-xformers
 numpy
 tyro
 diffusers
@@ -21,6 +19,7 @@ safetensors
 scikit-image
 scikit-learn
 scipy
+spaces
 tqdm
 transformers
 trimesh

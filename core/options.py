@@ -70,7 +70,7 @@ class Options:
     data_debug_list: str = 'dataset_debug/gobj_merged_debug.json'
     
     # TODO Please replace with your training data list
-    data_list_path: str = 'dataset_debug/gobjs_selected.json' 
+    data_list_path: str = 'gobjs_selected.json' 
     # fovy of the dataset
     fovy: float = 39.6 
     # camera near plane

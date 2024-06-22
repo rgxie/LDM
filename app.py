@@ -34,7 +34,7 @@ GRADIO_OBJ_SHADING_PATH = 'gradio_output_shading.obj'
 
 #opt = tyro.cli(AllConfigs)
 
-ckpt_path = hf_hub_download(repo_id="rgxie/LDM", filename="LDM6v01.ckpt")
+ckpt_path = hf_hub_download(repo_id="rgxie/LDM", filename="LDM_6V_SDF.ckpt")
 
 opt = Options(
     input_size=512, 
