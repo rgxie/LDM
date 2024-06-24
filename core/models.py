@@ -380,9 +380,10 @@ class LDM_Mesh(nn.Module):
         gt_images = gt_images * gt_masks + bg_color.view(1, 1, 3, 1, 1) * (1 - gt_masks)
         gt_albedos = gt_albedos * gt_masks + bg_color.view(1, 1, 3, 1, 1) * (1 - gt_masks)
         
+        depth_loss = F.mse_loss(pred_depths,gt_depths)
         loss_mse = F.mse_loss(pred_images, gt_images) + F.mse_loss(pred_alphas, gt_masks) + F.mse_loss(pred_albedos, gt_albedos) 
         
-        loss = loss + loss_mse + loss_reg
+        loss = loss + loss_mse + loss_reg + 0.5*depth_loss 
 
         if self.opt.lambda_lpips > 0:
             loss_lpips = self.lpips_loss(

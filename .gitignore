@@ -3,3 +3,5 @@ pretrained
 .vscode
 *.log
 train_data
+workspace_test
+gobjs_selected.json
