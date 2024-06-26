@@ -37,7 +37,7 @@ Our pretrained weight can be downloaded from [huggingface](https://huggingface.c
 For example, to download the fp16 model for inference:
 ```bash
 mkdir pretrained && cd pretrained
-wget wget https://huggingface.co/rgxie/LDM/resolve/main/LDM_6V_SDF.ckpt
+wget https://huggingface.co/rgxie/LDM/resolve/main/LDM_6V_SDF.ckpt
 cd ..
 ```
 

@@ -81,7 +81,7 @@ if opt.mvdream_or_zero123:
             "ashawkey/imagedream-ipmv-diffusers", # remote weights
             torch_dtype=torch.float16,
             trust_remote_code=True,
-            local_files_only=True,
+            local_files_only=False,
         )
         pipe = pipe.to(device)
     else:
@@ -89,7 +89,7 @@ if opt.mvdream_or_zero123:
             'ashawkey/mvdream-sd2.1-diffusers', # remote weights
             torch_dtype=torch.float16,
             trust_remote_code=True,
-            local_files_only=True,
+            local_files_only=False,
         )
         pipe = pipe.to(device)
 else:
@@ -99,7 +99,7 @@ else:
         custom_pipeline="zero123plus",
         torch_dtype=torch.float16,
         trust_remote_code=True,
-        local_files_only=True,
+        local_files_only=False,
     )
     pipe.scheduler = EulerAncestralDiscreteScheduler.from_config(
         pipe.scheduler.config, timestep_spacing='trailing'
