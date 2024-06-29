@@ -99,7 +99,7 @@ class Options:
     # training epochs
     num_epochs:  Optional[int] = 50
     # lpips loss weight
-    lambda_lpips: float = 2.0
+    lambda_lpips: float = 1.0
     # gradient clip
     gradient_clip: float = 1.0
     # mixed precision
