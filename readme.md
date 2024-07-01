@@ -53,7 +53,7 @@ python app.py
 # image to 3d
 # --workspace: folder to save output (*.obj,*.jpg)
 # --test_path: path to a folder containing images, or a single image
-python infer.py tiny_trf_trans_sdf --resume pretrained/LDM_6V_SDF.ckpt --workspace workspace_test --test_path example --seed 0
+python infer.py tiny_trf_trans_sdf_123plus --resume pretrained/LDM_6V_SDF.ckpt --workspace workspace_test --test_path example --seed 0
 
 # text to 3d
 # --workspace: folder to save output (*.obj,*.jpg)

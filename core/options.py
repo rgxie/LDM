@@ -18,7 +18,7 @@ class Options:
     
     infer_render_size: int = 256
     # True for mvdream  False for zero123plus
-    mvdream_or_zero123: Optional[bool] = False 
+    mvdream_or_zero123: Optional[bool] = True 
     
     rar_data: bool = True
     
